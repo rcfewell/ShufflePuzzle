@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShuffleBrain.h"
 
 @interface ViewController : UIViewController
 

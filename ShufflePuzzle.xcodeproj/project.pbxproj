@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6A46781A9AE8A8007F6697 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A46771A9AE8A8007F6697 /* arrow.png */; };
 		4D778FB91A93EEE300A1F48E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D778FB81A93EEE300A1F48E /* main.m */; };
 		4D778FBC1A93EEE300A1F48E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D778FBB1A93EEE300A1F48E /* AppDelegate.m */; };
 		4D778FBF1A93EEE300A1F48E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D778FBE1A93EEE300A1F48E /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		4D778FC41A93EEE300A1F48E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D778FC31A93EEE300A1F48E /* Images.xcassets */; };
 		4D778FC71A93EEE300A1F48E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D778FC51A93EEE300A1F48E /* LaunchScreen.xib */; };
 		4D778FD31A93EEE300A1F48E /* ShufflePuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D778FD21A93EEE300A1F48E /* ShufflePuzzleTests.m */; };
+		4D778FEF1A940D1D00A1F48E /* restartbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D778FEE1A940D1D00A1F48E /* restartbutton.png */; };
+		4DC2AF301A94234A00966130 /* ShuffleBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2AF2F1A94234A00966130 /* ShuffleBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D6A46771A9AE8A8007F6697 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		4D778FB31A93EEE300A1F48E /* ShufflePuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShufflePuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D778FB71A93EEE300A1F48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D778FB81A93EEE300A1F48E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		4D778FCC1A93EEE300A1F48E /* ShufflePuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShufflePuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D778FD11A93EEE300A1F48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D778FD21A93EEE300A1F48E /* ShufflePuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShufflePuzzleTests.m; sourceTree = "<group>"; };
+		4D778FEE1A940D1D00A1F48E /* restartbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restartbutton.png; sourceTree = "<group>"; };
+		4DC2AF2E1A94234A00966130 /* ShuffleBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuffleBrain.h; sourceTree = "<group>"; };
+		4DC2AF2F1A94234A00966130 /* ShuffleBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuffleBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,8 @@
 				4D778FBB1A93EEE300A1F48E /* AppDelegate.m */,
 				4D778FBD1A93EEE300A1F48E /* ViewController.h */,
 				4D778FBE1A93EEE300A1F48E /* ViewController.m */,
+				4DC2AF2E1A94234A00966130 /* ShuffleBrain.h */,
+				4DC2AF2F1A94234A00966130 /* ShuffleBrain.m */,
 				4D778FC01A93EEE300A1F48E /* Main.storyboard */,
 				4D778FC31A93EEE300A1F48E /* Images.xcassets */,
 				4D778FC51A93EEE300A1F48E /* LaunchScreen.xib */,
@@ -96,11 +105,14 @@
 		4D778FB61A93EEE300A1F48E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D778FEE1A940D1D00A1F48E /* restartbutton.png */,
+				4D6A46771A9AE8A8007F6697 /* arrow.png */,
 				4D778FB71A93EEE300A1F48E /* Info.plist */,
 				4D778FB81A93EEE300A1F48E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		4D778FCF1A93EEE300A1F48E /* ShufflePuzzleTests */ = {
 			isa = PBXGroup;
@@ -200,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D778FC21A93EEE300A1F48E /* Main.storyboard in Resources */,
+				4D778FEF1A940D1D00A1F48E /* restartbutton.png in Resources */,
 				4D778FC71A93EEE300A1F48E /* LaunchScreen.xib in Resources */,
+				4D6A46781A9AE8A8007F6697 /* arrow.png in Resources */,
 				4D778FC41A93EEE300A1F48E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +235,7 @@
 			files = (
 				4D778FBF1A93EEE300A1F48E /* ViewController.m in Sources */,
 				4D778FBC1A93EEE300A1F48E /* AppDelegate.m in Sources */,
+				4DC2AF301A94234A00966130 /* ShuffleBrain.m in Sources */,
 				4D778FB91A93EEE300A1F48E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +429,7 @@
 				4D778FD81A93EEE300A1F48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D778FD91A93EEE300A1F48E /* Build configuration list for PBXNativeTarget "ShufflePuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +438,7 @@
 				4D778FDB1A93EEE300A1F48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
