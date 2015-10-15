@@ -19,6 +19,6 @@
 - (void) moveTileLeft;
 - (void) moveTileUp;
 - (void) moveTileDown;
-- (void) shuffleTiles: (int) difficulty;
+- (void) shuffleTiles: (int) difficulty; 
 - (void) resetCurrentBoard: (int) tile;
 @end
